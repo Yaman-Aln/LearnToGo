@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                     <b>LearnToGo</b> -
+                </h1>
+                <h2 class="subtitle">
+                     Learn English faster by learning the <b>right</b> words.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+              <div class="column">
+                <form class="form-inline" method="POST" action="/">
+                  <div class="input-group">
+                      <span class="input-group-addon">Please select</span>
+                          <select name="level" class="selectpicker form-control">
+                            <option value = "1">Level 1</option>
+                            <option value = "2">Level 2</option>
+                            <option value = "3">Level 3</option>
+                            <option value = "4">Level 4</option>
+                          </select>
+                  </div>
+                  &nbsp
+                  <div class="input-group">
+                      <span class="input-group-addon">Please select</span>
+                          <select name="algorithm" class="selectpicker form-control">
+                            <option value = "log_reg">Logistic Regression</option>
+                            <option value = "match_alg">Matching Algorithm</option>
+                          </select>
+                  </div>
+                  &nbsp
+
+<!--                <form method="POST" action="/">
+
+                  <fieldset style="font-size:25px">
+                       <legend>Algorithm</legend>
+                       <p >
+                          <select id = "algorithm" name = "algorithm" style="font-size:15px">
+                            <option value = "1" selected>Logistic Regression</option>
+                            <option value = "2">Matching Algorithm</option>
+                          </select>
+                       </p>
+                  </fieldset>
+                </form>
+                  &nbsp
+                  <fieldset style="font-size:25px">
+                       <legend>English Level</legend>
+                       <p>
+                          <select id = "level" name = "level" style="font-size:15px">
+                            <option value = "1" selected>Level 1</option>
+                            <option value = "2">Level 2</option>
+                            <option value = "3">Level 3</option>
+                            <option value = "4">Level 4</option>
+                          </select>
+                       </p>
+                  </fieldset>
+                  &nbsp
+              </div> -->
+                <div class="column">
+<!--                      <form method="POST" action="/"> -->
+                        <textarea name="key_words" style="height:300px;width:400px;border-style:double; border-width: thick;" line-height= 300px  type="text"> </textarea>
+                          <!--<input style="height:300px;width:400px;border-style:double;padding-top: 10px;" line-height= 200px  type="text" name="key_words"> -->
+                          <!--<input type="submit" form="usrform" value="Submit"> -->
+                          &nbsp
+                          <button type="submit" style="font-size:15px" value="Submit"><b>Submit Article</b></button>
+                      </form>
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-50x50">
+                                </figure>
+                            </div>
+                        </article>
+                </div>
+                <div class="column">
+                  <output style="border:2px dotted black" name="result"><b>10 Words to Learn:</b> {{top_ten}}</output>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

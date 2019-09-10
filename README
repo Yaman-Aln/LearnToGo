@@ -1,0 +1,18 @@
+LearnToGo is a web-app which helps a new learner of a language identify the most important 10 words to learn in an article they copy paste based on their level. This will not only help the learner with the pasted article, but because of LearnToGo's machine learning algorithm, which takes into account popularity of the word, also allows the learner to add the right words to his/her vocabulary for regular day-to-day use.
+
+By helping you learn the language, you will LearnToGo.
+
+As of Sept 6, LearnToGo uses a Python (with use of SQLAlchemy toolkit, NumPy/pandas library for data analysis etc)/HTML/SQLite3 stack within Flask framework. While the analysis can be optimized, it is does have some complexity. It uses three features for analysis: the length of the word, the number of syllables, and how frequently it shows up in the most popular novels via the Corpus of Contemporary English.
+
+Specifically, the logistic regression analysis uses these parameters to differentiate between a beginner/non-beginner level. Based on the prescribed training set, it sits at a 100% training accuracy (the purposeful division of the data for very simple and common words vs simple/moderate and less common words allows for this to be the case, as the human eye can also detect this.) The next step is to master at the same rate as the expert eye, incorporating more levels (requiring more sophisticated machine learning algorithms) as   
+  
+It should be noted that the baseline of these levels include 100 most common words in the English language, as well as different levels given from popularized tests. Conversational language is the primary orientation of the analysis.
+
+There are however some current constraints/limitations of the program that are on the 
+to improve list including:
+
+-must create the database first, then run it.
+-must use words in the dictionary file.
+-must tell it your estimated level, as well as whether to use logistical regression or matching algorithm
+-deeper learning algorithm to be incorporated
+-UI not ideal
