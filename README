@@ -11,6 +11,7 @@ It should be noted that the baseline of these levels include 100 most common wor
 There are however some current constraints/limitations of the program that are on the 
 to improve list including:
 
+-firstly - the efficiency of populating the tables is not at all taken into account. The design intent was to populate them to apply the log reg algorith/eventual DL algorithm, then look into that
 -must create the database first, then run it.
 -must use words in the dictionary file.
 -must tell it your estimated level, as well as whether to use logistical regression or matching algorithm
